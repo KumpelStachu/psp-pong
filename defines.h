@@ -1,0 +1,23 @@
+#define UNHEX(x) (((x) >> 16) & 0xFF), (((x) >> 8) & 0xFF), ((x) & 0xFF), 0xFF
+#define BLACK UNHEX(0x000000)
+#define WHITE UNHEX(0xFFFFFF)
+#define LIGHT_GRAY UNHEX(0xA0A0A0)
+#define DARK_GRAY UNHEX(0x202020)
+
+#define SCREEN_WIDTH 480
+#define SCREEN_HEIGHT 272
+
+#define PADDLE_WIDTH 10
+#define PADDLE_HEIGHT 80
+#define PADDLE_OFFSET 10
+#define PADDLE_SPEED 3
+
+#define BALL_SIZE 10
+#define BALL_VELOCITY 1
+#define BALL_ACCELERATION 1.15
+
+#define DIGIT_SIZE 5
+#define DIGIT_WIDTH (DIGIT_SIZE * 2 + 1)
+#define DIGIT_HEIGHT (DIGIT_WIDTH * 2 + 1)
+#define DIGIT_OFFSET 3
+#define DIGIT_STROKE 1
